@@ -1,11 +1,11 @@
 import { RECEIVE_USERS } from '../actions/users'
 
 export default function users (state = {}, actions){
-    switch(action.type){
+    switch(actions.type){
         case RECEIVE_USERS:
             return {
                 ...state,
-                ...action.users
+                ...actions.users
             }
         default :
             return state
